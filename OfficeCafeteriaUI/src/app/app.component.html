@@ -1,0 +1,43 @@
+<div id="app">
+  <nav class="navbar fixed-top navbar-expand navbar-background ">
+    <a href="#" class="navbar-brand">
+        <img src="https://www.twomato.com.au/assets/images/loader.gif" alt="" width="55" height="32" class="d-inline-block align-top">
+        <!--<img src="https://i.pinimg.com/originals/ee/1d/08/ee1d081c5bdf966b058c1a6588e73e8a.gif" alt="" width="50" height="30" class="d-inline-block align-top">-->
+        CAFE STREET</a>
+    <ul class="navbar-nav mr-auto" routerLinkActive="active">
+      <li class="nav-item">
+        <a href="/home" class="nav-link font-weight-bold" routerLink="home" >Home </a>
+      </li>
+      <li class="nav-item" *ngIf="showAdminBoard">
+        <a href="/admin" class="nav-link font-weight-bold" routerLink="admin">Admin Board</a>
+      </li>
+      <li class="nav-item">
+        <a href="/user" class="nav-link font-weight-bold" *ngIf="isLoggedIn" routerLink="user">Menu</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+      <li class="nav-item">
+        <a href="/register" class="nav-link font-weight-bold" routerLink="register">Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a href="/login" class="nav-link font-weight-bold" routerLink="login">Login</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+      <li class="nav-item">
+        <a href="/profile" class="nav-link font-weight-bold" routerLink="profile">{{ username }}</a>
+      </li>
+      <li class="nav-item">
+        <a href class="nav-link font-weight-bold" (click)="logout()">LogOut</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+

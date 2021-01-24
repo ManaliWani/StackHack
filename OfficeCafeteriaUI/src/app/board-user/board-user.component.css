@@ -1,0 +1,115 @@
+.page-container{
+
+    height: 100%;
+
+}
+.sidebar{
+    height: 100%;
+    width: 300px;
+    padding-left: 0px;
+    padding-top: 0;
+    background: rgb(0, 0, 0);
+    opacity: 0.8;
+    position: fixed
+}
+.list-items{
+    margin-top: 0px;
+    padding-top: 80px;
+    padding-bottom: 172px;
+    padding-left: 0px;
+}
+.list-item{
+    justify-content: left;
+    position: relative;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    color: white;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+.list-item:hover{
+    color: orange
+}
+.list-item::before{
+    content : '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background-color: orange;
+    opacity: 0;
+    transform: scaleY(0);
+
+    transition: transform 0.2s, opacity 0.2s;
+}
+.list-item:hover::before{
+    opacity: 1;
+    transform: scaleY(1)
+}
+.list-item i.material-icons{
+    margin-right: 20px
+}
+.list-group-item{
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+}
+a {   
+    color: white;   
+}
+a.hover{
+    color: orange
+}
+.row .grid{
+
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+}
+.form-check-input{
+    color: black;
+    background-color: orange
+    
+}
+.form-group .col-md-6{
+    padding-top: 50px
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(206, 111, 9);
+    color: white;
+    text-align: center;
+  }
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+
+
+  .btn-outline-dark:focus,
+.btn-outline-dark:active,
+.btn-outline-dark.active {
+    background-color: rgb(206, 111, 9);
+    border-color: rgb(206, 111, 9);
+}
+

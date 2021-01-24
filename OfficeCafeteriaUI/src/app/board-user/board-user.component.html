@@ -1,0 +1,472 @@
+
+          <div class="form-group row">
+
+            <div class="form-group col-md-4 fixed">  
+
+             <div class="page-container col-sm-6 col-md-6 col-xs-6">
+                <div class="sidebar">
+                  <div class="list-items">
+                    <div class="list-item">
+                        <i class="material-icons">local_cafe</i>
+                        <a href="/user#beverages">Beverages</a>
+                    </div>
+                    <div class="list-item">
+                        <i class="material-icons">wine_bar</i>
+                        <a href="/user#juice">Juice</a>
+                    </div>
+                    <div class="list-item">
+                        <i class="material-icons">tapas</i>
+                        <a href="/user#milkshake">Milkshakes</a>
+                    </div>
+                    <div class="list-item">
+                        <i class="material-icons">rice_bowl</i>
+                        <a href="/user#rice">Rice</a>
+                    </div>
+                    <div class="list-item">
+                        <i class="material-icons">restaurant</i>
+                        <a href="/user#noodles">Noodles</a>
+                    </div>
+                    <div class="list-item">
+                        <i class="material-icons">local_dining</i>
+                        <a href="/user#breakfast">Breakfast</a>
+                    </div>
+                    
+                  
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            
+            
+            <br><br>
+
+            
+
+            <div class="form-group col-md-6" style="color: white;">  
+              
+              <div id="beverages">
+                
+                
+                
+                <ul  id="beverages" class="list-group">
+                  <br><br><br>
+                  <div class="row grid">
+                    <h2><i class="material-icons">local_cafe</i> BEVERAGES</h2>
+                        <div class="col list-group-item d-flex justify-content-between align-items-center">Tea</div>
+                        <div class="col-lg-3">10/-</div>
+                        <div class="col-auto form-check mb-2">
+                              <input #teaCheckBox class="form-check-input" type="checkbox" id="tea" [checked]="tea" (change)="onChanged(teaCheckBox.id,teaCheckBox.checked)">
+                              <label class="form-check-label" for="options">Add</label>
+                            
+                        </div>
+                        
+                  </div>
+
+                  <div class="row grid">
+
+                    <div class="col list-group-item d-flex justify-content-between align-items-center">Coffee</div>
+                    <div class="col-lg-3">15/-</div>
+                    <div class="col-auto form-check mb-2">
+                          <input #coffeeCheckBox class="form-check-input" type="checkbox" id="coffee" [checked]="coffee" (change)="onChanged(coffeeCheckBox.id,coffeeCheckBox.checked)">
+                          <label class="form-check-label" for="autoSizingCheck">Add</label>
+                        
+                    </div>
+                    
+                  </div>
+
+                  <div class="row grid">
+
+                    <div class="col list-group-item d-flex justify-content-between align-items-center">Milk</div>
+                    <div class="col-lg-3">20/-</div>
+                    <div class="col-auto form-check mb-2">
+                          <input #milkCheckBox class="form-check-input" type="checkbox" id="milk" [checked]="milk" (change)="onChanged(milkCheckBox.id,milkCheckBox.checked)">
+                          <label class="form-check-label" for="autoSizingCheck">Add</label>
+                    </div>
+                    
+                  </div>
+                  <div class="row grid">
+
+                    <div class="col list-group-item d-flex justify-content-between align-items-center">Hot Chocolate milk</div>
+                    <div class="col-lg-3">25/-</div>
+                    <div class="col-auto form-check mb-2">
+                          <input #hotchocolatemilkCheckBox class="form-check-input" type="checkbox" id="hotchocolatemilk" [checked]="hotchocolatemilk" (change)="onChanged(hotchocolatemilkCheckBox.id,hotchocolatemilkCheckBox.checked)">
+                          <label class="form-check-label" for="autoSizingCheck">Add</label>
+                    </div>
+                    
+                  </div>
+                  <div class="row grid">
+
+                    <div class="col list-group-item d-flex justify-content-between align-items-center">Cold Coffee</div>
+                    <div class="col-lg-3">30/-</div>
+                    <div class="col-auto form-check mb-2">
+                          <input #coldcoffeeCheckBox class="form-check-input" type="checkbox" id="coldcoffee" [checked]="coldcoffee" (change)="onChanged(coldcoffeeCheckBox.id,coldcoffeeCheckBox.checked)">
+                          <label class="form-check-label" for="autoSizingCheck">Add</label>
+                    </div>
+                    
+                  </div>
+
+                  </ul>
+                </div>
+
+
+                <div id="juice">
+                  <br><br><br>
+                  
+                  
+                  <ul  id="juice" class="list-group">
+                      
+                    <div class="row grid">
+                      <h2><i class="material-icons">wine_bar</i> JUICE</h2>
+                          <div class="col list-group-item d-flex justify-content-between align-items-center">Lemon Juice</div>
+                          <div class="col-lg-3">10/-</div>
+                          <div class="col-auto form-check mb-2">
+                                <input #lemonjuiceCheckBox class="form-check-input" type="checkbox" id="lemonjuice" [checked]="lemonjuice" (change)="onChanged(lemonjuiceCheckBox.id,lemonjuiceCheckBox.checked)">
+                                <label class="form-check-label" for="autoSizingCheck">Add</label>
+                              
+                          </div>
+                          
+                    </div>
+  
+                    <div class="row grid">
+  
+                      <div class="col list-group-item d-flex justify-content-between align-items-center">Mosambi Juice</div>
+                      <div class="col-lg-3">30/-</div>
+                      <div class="col-auto form-check mb-2">
+                            <input #mosambijuiceCheckBox class="form-check-input" type="checkbox" id="mosambijuice" [checked]="mosambijuice" (change)="onChanged(mosambijuiceCheckBox.id,mosambijuiceCheckBox.checked)">
+                            <label class="form-check-label" for="autoSizingCheck">Add</label>
+                          
+                      </div>
+                      
+                    </div>
+  
+                    <div class="row grid">
+  
+                      <div class="col list-group-item d-flex justify-content-between align-items-center">Pineapple Juice</div>
+                      <div class="col-lg-3">30/-</div>
+                      <div class="col-auto form-check mb-2">
+                            <input #pineapplejuiceCheckBox class="form-check-input" type="checkbox" id="pineapplejuice" [checked]="pineapplejuice" (change)="onChanged(pineapplejuiceCheckBox.id,pineapplejuiceCheckBox.checked)">
+                            <label class="form-check-label" for="autoSizingCheck">Add</label>
+                      </div>
+                      
+                    </div>
+                    <div class="row grid">
+  
+                      <div class="col list-group-item d-flex justify-content-between align-items-center">Watermelon Juice</div>
+                      <div class="col-lg-3">30/-</div>
+                      <div class="col-auto form-check mb-2">
+                            <input #watermelonjuiceCheckBox class="form-check-input" type="checkbox" id="watermelonjuice" [checked]="watermelonjuice" (change)="onChanged(watermelonjuiceCheckBox.id,watermelonjuiceCheckBox.checked)">
+                            <label class="form-check-label" for="autoSizingCheck">Add</label>
+                      </div>
+                      
+                    </div>
+  
+                    </ul>
+                  </div>
+
+                    <br>
+                    <div id="milkshake">
+                      <br><br><br>
+                      
+                      
+                      <ul  id="milkshake" class="list-group">
+                          
+                        <div class="row grid">
+                          <h2><i class="material-icons">tapas</i> MILKSHAKES</h2>
+                              <div class="col list-group-item d-flex justify-content-between align-items-center">Chocolate Milkshake</div>
+                              <div class="col-lg-3">25/-</div>
+                              <div class="col-auto form-check mb-2">
+                                    <input #chocolatemilkshakeCheckBox class="form-check-input" type="checkbox" id="chocolatemilkshake" [checked]="chocolatemilkshake" (change)="onChanged(chocolatemilkshakeCheckBox.id,chocolatemilkshakeCheckBox.checked)">
+                                    <label class="form-check-label" for="autoSizingCheck">Add</label>
+                                  
+                              </div>
+                              
+                        </div>
+      
+                        <div class="row grid">
+      
+                          <div class="col list-group-item d-flex justify-content-between align-items-center">Banana Milkshake</div>
+                          <div class="col-lg-3">25/-</div>
+                          <div class="col-auto form-check mb-2">
+                                <input #bananamilkshakeCheckBox class="form-check-input" type="checkbox" id="bananamilkshake" [checked]="bananamilkshake" (change)="onChanged(bananamilkshakeCheckBox.id,bananamilkshakeCheckBox.checked)">
+                                <label class="form-check-label" for="autoSizingCheck">Add</label>
+                              
+                          </div>
+                          
+                        </div>
+      
+                        <div class="row grid">
+      
+                          <div class="col list-group-item d-flex justify-content-between align-items-center">Mango Milkshake</div>
+                          <div class="col-lg-3">30/-</div>
+                          <div class="col-auto form-check mb-2">
+                                <input #mangomilkshakeCheckBox class="form-check-input" type="checkbox" id="mangomilkshake" [checked]="mangomilkshake" (change)="onChanged(mangomilkshakeCheckBox.id,mangomilkshakeCheckBox.checked)">
+                                <label class="form-check-label" for="autoSizingCheck">Add</label>
+                          </div>
+                          
+                        </div>
+                        <div class="row grid">
+      
+                          <div class="col list-group-item d-flex justify-content-between align-items-center">Butterscotch Milkshake</div>
+                          <div class="col-lg-3">30/-</div>
+                          <div class="col-auto form-check mb-2">
+                                <input #butterscotchmilkshakeCheckBox class="form-check-input" type="checkbox" id="butterscotchmilkshake" [checked]="butterscotchmilkshake" (change)="onChanged(butterscotchmilkshakeCheckBox.id,butterscotchmilkshakeCheckBox.checked)">
+                                <label class="form-check-label" for="autoSizingCheck">Add</label>
+                          </div>
+                          
+                        </div>
+      
+                        </ul>
+                      </div> 
+                      <div id="rice">
+                        <br><br><br>
+                        
+                        
+                        <ul  id="rice" class="list-group">
+                            
+                          <div class="row grid">
+                            <h2><i class="material-icons">rice_bowl</i> RICE</h2>
+                                <div class="col list-group-item d-flex justify-content-between align-items-center">Veg Fried Rice</div>
+                                <div class="col-lg-3">40/-</div>
+                                <div class="col-auto form-check mb-2">
+                                      <input #vegfriedriceCheckBox class="form-check-input" type="checkbox" id="vegfriedrice" [checked]="vegfriedrice" (change)="onChanged(vegfriedriceCheckBox.id,vegfriedriceCheckBox.checked)">
+                                      <label class="form-check-label" for="autoSizingCheck">Add</label>
+                                    
+                                </div>
+                                
+                          </div>
+        
+                          <div class="row grid">
+        
+                            <div class="col list-group-item d-flex justify-content-between align-items-center">Veg Schezwan Rice</div>
+                            <div class="col-lg-3">50/-</div>
+                            <div class="col-auto form-check mb-2">
+                                  <input #vegschezwanriceCheckBox class="form-check-input" type="checkbox" id="vegschezwanrice" [checked]="vegschezwanrice" (change)="onChanged(vegschezwanriceCheckBox.id,vegschezwanriceCheckBox.checked)">
+                                  <label class="form-check-label" for="autoSizingCheck">Add</label>
+                                
+                            </div>
+                            
+                          </div>
+        
+                          <div class="row grid">
+        
+                            <div class="col list-group-item d-flex justify-content-between align-items-center">Veg Triple Rice</div>
+                            <div class="col-lg-3">60/-</div>
+                            <div class="col-auto form-check mb-2">
+                                  <input #vegtriplericeCheckBox class="form-check-input" type="checkbox" id="vegtriplerice" [checked]="vegtriplerice" (change)="onChanged(vegtriplericeCheckBox.id,vegtriplericeCheckBox.checked)">
+                                  <label class="form-check-label" for="autoSizingCheck">Add</label>
+                            </div>
+                            
+                          </div>
+                          <div class="row grid">
+        
+                            <div class="col list-group-item d-flex justify-content-between align-items-center">Veg Manchurian Rice</div>
+                            <div class="col-lg-3">60/-</div>
+                            <div class="col-auto form-check mb-2">
+                                  <input #vegmanchurianriceCheckBox class="form-check-input" type="checkbox" id="vegmanchurianrice" [checked]="vegmanchurianrice" (change)="onChanged(vegmanchurianriceCheckBox.id,vegmanchurianriceCheckBox.checked)">
+                                  <label class="form-check-label" for="autoSizingCheck">Add</label>
+                            </div>
+                            
+                          </div>
+                          <div class="row grid">
+        
+                            <div class="col list-group-item d-flex justify-content-between align-items-center">Veg Combination Rice</div>
+                            <div class="col-lg-3">50/-</div>
+                            <div class="col-auto form-check mb-2">
+                                  <input #vegcombinationriceCheckBox class="form-check-input" type="checkbox" id="vegcombinationrice" [checked]="vegcombinationrice" (change)="onChanged(vegcombinationriceCheckBox.id,vegcombinationriceCheckBox.checked)">
+                                  <label class="form-check-label" for="autoSizingCheck">Add</label>
+                            </div>
+                            
+                          </div>
+                          <div class="row grid">
+        
+                            <div class="col list-group-item d-flex justify-content-between align-items-center">Paneer Manchurian Rice</div>
+                            <div class="col-lg-3">60/-</div>
+                            <div class="col-auto form-check mb-2">
+                                  <input #paneermanchurianriceCheckBox class="form-check-input" type="checkbox" id="paneermanchurianrice" [checked]="paneermanchurianrice" (change)="onChanged(paneermanchurianriceCheckBox.id,paneermanchurianriceCheckBox.checked)">
+                                  <label class="form-check-label" for="autoSizingCheck">Add</label>
+                            </div>
+                            
+                          </div>
+                          <div class="row grid">
+        
+                            <div class="col list-group-item d-flex justify-content-between align-items-center">Jeera Rice-Dal Tadka</div>
+                            <div class="col-lg-3">80/-</div>
+                            <div class="col-auto form-check mb-2">
+                                  <input #jeerariceCheckBox class="form-check-input" type="checkbox" id="jeerarice" [checked]="jeerarice" (change)="onChanged(jeerariceCheckBox.id,jeerariceCheckBox.checked)">
+                                  <label class="form-check-label" for="autoSizingCheck">Add</label>
+                            </div>
+                            
+                          </div>
+        
+                          </ul>
+                        </div> 
+                        
+                        <div id="noodles">
+                          <br><br><br>
+                          
+                          
+                          <ul  id="noodles" class="list-group">
+                              
+                            <div class="row grid">
+                              <h2><i class="material-icons">restaurant</i> NOODLES</h2>
+                                  <div class="col list-group-item d-flex justify-content-between align-items-center">Veg Hakka Noodles</div>
+                                  <div class="col-lg-3">40/-</div>
+                                  <div class="col-auto form-check mb-2">
+                                        <input #veghakkanoodlesCheckBox class="form-check-input" type="checkbox" id="veghakkanoodles" [checked]="veghakkanoodles" (change)="onChanged(veghakkanoodlesCheckBox.id,veghakkanoodlesCheckBox.checked)">
+                                        <label class="form-check-label" for="autoSizingCheck">Add</label>
+                                      
+                                  </div>
+                                  
+                            </div>
+          
+                            <div class="row grid">
+          
+                              <div class="col list-group-item d-flex justify-content-between align-items-center">Veg Schezwan Noodles</div>
+                              <div class="col-lg-3">50/-</div>
+                              <div class="col-auto form-check mb-2">
+                                    <input #vegschezwannoodlesCheckBox class="form-check-input" type="checkbox" id="vegschezwannoodles" [checked]="vegschezwannoodles" (change)="onChanged(vegschezwannoodlesCheckBox.id,vegschezwannoodlesCheckBox.checked)">
+                                    <label class="form-check-label" for="autoSizingCheck">Add</label>
+                                  
+                              </div>
+                              
+                            </div>
+                            <div class="row grid">
+          
+                              <div class="col list-group-item d-flex justify-content-between align-items-center">Veg Maggi</div>
+                              <div class="col-lg-3">40/-</div>
+                              <div class="col-auto form-check mb-2">
+                                    <input #vegmaggiCheckBox class="form-check-input" type="checkbox" id="vegmaggi" [checked]="vegmaggi" (change)="onChanged(vegmaggiCheckBox.id,vegmaggiCheckBox.checked)">
+                                    <label class="form-check-label" for="autoSizingCheck">Add</label>
+                              </div>
+                              
+                            </div>
+                            
+          
+                            </ul>
+                          </div> 
+
+                          <div id="breakfast">
+                            <br><br><br>
+                            
+                            
+                            <ul  id="breakfast" class="list-group">
+                                
+                              <div class="row grid">
+                                <h2><i class="material-icons">local_dining</i> BREAKFAST</h2>
+                                    <div class="col list-group-item d-flex justify-content-between align-items-center">Masala Dosa</div>
+                                    <div class="col-lg-3">60/-</div>
+                                    <div class="col-auto form-check mb-2">
+                                          <input #masaladosaCheckBox class="form-check-input" type="checkbox" id="masaladosa" [checked]="masaladosa" (change)="onChanged(masaladosaCheckBox.id,masaladosaCheckBox.checked)">
+                                          <label class="form-check-label" for="autoSizingCheck">Add</label>
+                                        
+                                    </div>
+                                    
+                              </div>
+            
+                              <div class="row grid">
+            
+                                <div class="col list-group-item d-flex justify-content-between align-items-center">Idli Sambhar</div>
+                                <div class="col-lg-3">60/-</div>
+                                <div class="col-auto form-check mb-2">
+                                      <input #idlisambharCheckBox class="form-check-input" type="checkbox" id="idlisambhar" [checked]="idlisambhar" (change)="onChanged(idlisambharCheckBox.id,idlisambharCheckBox.checked)">
+                                      <label class="form-check-label" for="autoSizingCheck">Add</label>
+                                    
+                                </div>
+                                
+                              </div>
+                              <div class="row grid">
+            
+                                <div class="col list-group-item d-flex justify-content-between align-items-center">Wada Sambhar</div>
+                                <div class="col-lg-3">50/-</div>
+                                <div class="col-auto form-check mb-2">
+                                      <input #wadasambharCheckBox class="form-check-input" type="checkbox" id="wadasambhar" [checked]="wadasambhar" (change)="onChanged(wadasambharCheckBox.id,wadasambharCheckBox.checked)">
+                                      <label class="form-check-label" for="autoSizingCheck">Add</label>
+                                </div>
+                                
+                              </div>
+                              <div class="row grid">
+            
+                                <div class="col list-group-item d-flex justify-content-between align-items-center">Puri Bhaji</div>
+                                <div class="col-lg-3">50/-</div>
+                                <div class="col-auto form-check mb-2">
+                                      <input #puribhajiCheckBox class="form-check-input" type="checkbox" id="puribhaji" [checked]="puribhaji" (change)="onChanged(puribhajiCheckBox.id,puribhajiCheckBox.checked)">
+                                      <label class="form-check-label" for="autoSizingCheck">Add</label>
+                                </div>
+                                
+                              </div>
+
+
+                              
+            
+                              </ul>
+
+                              
+
+
+                            </div>
+                            
+                            
+
+
+                            <div *ngIf="totalPrice!=0" id="order">
+                                <br><br><br>
+  
+                                <ul  id="order" class="list-group">
+                                    
+                                  <div class="row grid ">
+                                    <h2><i class="material-icons">menu_book</i> YOUR ORDER </h2>
+                                    <div class="col list-group-item d-flex justify-content-between align-items-center">
+                                      <ul>
+                                        <li *ngFor="let item of selectedItems">
+                                          <pre class="tab" style="color: white;font-size: 16px"> {{item }}   ------------------------------   {{ this.price[item] }}/- </pre>
+                                        </li>
+                                      </ul>
+                                    </div>
+
+                                    <pre class="tab" style="font-size: 16px;color: white"> 
+      Payment Mode : 
+      <button type="button" class="btn btn-outline-dark" style="color: white" (click)="online()">Online</button><button type="button" class="btn btn-outline-dark" style="color: white " (click)="cash()">Cash</button> 
+      </pre> 
+  
+                                  <div class="md-form mx-5 my-5" style="width: 300px;margin-left: 0px">
+                                      <input type="time" id="inputMDEx1" class="form-control">
+                                      <label for="inputMDEx1">Choose your pick time</label>
+                                      <button type="button" class="btn btn-success" (click)="confirm()">Confirm Order</button><br><br><br><br>
+                                  </div>
+                                    <br><br><br><br>
+
+                                    
+                                        
+                                    
+                                  </div>
+                                  </ul>
+                            </div>
+
+
+            </div>       
+            
+          
+          </div>     
+
+
+
+
+
+          <div *ngIf="totalPrice!=0" class="footer">
+                <br>
+                <h4 class="font-weight-bold">Total Price   :   {{totalPrice}}</h4> 
+
+                <button type="button" class="btn btn-outline-dark" (click)="placeOrd()"><a href="/user#order">Check Order</a></button><br>
+ 
+                
+          </div>
+    
+
+
+
+            
+ 
+
+    
